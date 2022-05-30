@@ -29,10 +29,10 @@
         // Define API Keys (replace these with your own!)
         // To obtain an API key go to:
         // https://cloud.maptiler.com/account/?ref=procedural
-        const MAPTILER_APIKEY = null;
+        const MAPTILER_APIKEY = '5oT5Np7ipsbVhre3lxdi';
         if ( !MAPTILER_APIKEY ) {
           const error = Error( 'Modify index.dev.html to include API keys' );
-          container.innerHTML = 'Modify datasource definition to contain a valid API key. <a href="https://cloud.maptiler.com/account/?ref=procedural">Click here to get a free API key</a>'; 
+          container.innerHTML = 'Modify datasource definition to contain a valid API key. <a href="https://cloud.maptiler.com/account/?ref=procedural">Click here to get a free API key</a>';
           throw error;
         }
 
@@ -40,7 +40,7 @@
           provider: 'maptiler',
           apiKey: MAPTILER_APIKEY,
         }
-        
+
         // Custom datasource definition
         //const datasource = {
         //  elevation: {
